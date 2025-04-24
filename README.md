@@ -1,1 +1,1 @@
-# simple-node-js-react-npm-app-k8s-manifests-
+# simple-node-react-k8s-manifests
