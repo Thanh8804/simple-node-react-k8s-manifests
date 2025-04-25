@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: react-app
-        image: thanh8804/react-app:67
+        image: thanh8804/react-app:68
         ports:
         - containerPort: 3000
         
