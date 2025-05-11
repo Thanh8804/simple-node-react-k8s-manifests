@@ -1,0 +1,11 @@
+# base/kustomization.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - deployment.yaml
+  - service.yaml
+  - configmap.yaml
+commonLabels:
+  app: simple-node-react
+  app.kubernetes.io/name: simple-node-react
+  app.kubernetes.io/part-of: simple-node-react
