@@ -1,3 +1,4 @@
+
 # overlays/dev/kustomization.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
@@ -7,6 +8,6 @@ resources:
   - namespace.yaml
 patchesStrategicMerge:
   - config-patch.yaml
+  - service-patch.yaml
 commonLabels:
   environment: dev
-  

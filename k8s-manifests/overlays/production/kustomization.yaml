@@ -8,5 +8,6 @@ resources:
 patchesStrategicMerge:
   - config-patch.yaml
   - deployment-patch.yaml
+  - service-patch.yaml
 commonLabels:
   environment: production

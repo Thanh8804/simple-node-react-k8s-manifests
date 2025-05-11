@@ -1,12 +1,12 @@
+# base/service.yaml
 apiVersion: v1
 kind: Service
 metadata:
-  name: react-app-service
-  namespace: application-deployment
+  name: simple-node-react
 spec:
   type: NodePort
   selector:
-    app: react-app
+    app: simple-node-react
   ports:
   - protocol: TCP
     port: 80
