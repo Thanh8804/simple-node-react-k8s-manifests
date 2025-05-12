@@ -10,3 +10,6 @@ patches:
     target:
       kind: Service
       name: simple-node-react
+images:
+  - name: thanh8804/react-app
+    newTag: ${BUILD_NUMBER}
