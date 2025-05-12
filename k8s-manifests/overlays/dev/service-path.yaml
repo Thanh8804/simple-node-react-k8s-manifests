@@ -4,9 +4,6 @@ metadata:
   name: simple-node-react
 spec:
   ports:
-  - nodePort: 30002
+  - nodePort: 30005
     port: 3000
     targetPort: 3000
-  selector:
-    app: simple-node-react
-  type: NodePort
