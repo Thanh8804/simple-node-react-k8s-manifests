@@ -4,6 +4,7 @@ resources:
   - ../../base
 
 nameSuffix: -development
+namespace: dev
 patches:
   - path: service-path.yaml
     target:
