@@ -1,13 +1,5 @@
-
-# overlays/dev/kustomization.yaml
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-namespace: simple-node-react-dev
 resources:
   - ../../base
-  - namespace.yaml
-patchesStrategicMerge:
-  - config-patch.yaml
-  - service-patch.yaml
-commonLabels:
-  environment: dev
+  - service-path.yaml
+
+nameSuffix: -development

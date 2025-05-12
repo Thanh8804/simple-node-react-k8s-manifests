@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: simple-node-react
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: simple-node-react
@@ -14,26 +14,6 @@ spec:
     spec:
       containers:
       - name: simple-node-react
-        image: thanh8804/react-app:latest
-        imagePullPolicy: Always
+        image: thanh8804/react-app:69
         ports:
         - containerPort: 3000
-        env:
-        - name: NODE_ENV
-          valueFrom:
-            configMapKeyRef:
-              name: simple-node-react-config
-              key: NODE_ENV
-        resources:
-          requests:
-            memory: "64Mi"
-            cpu: "100m"
-          limits:
-            memory: "128Mi"
-            cpu: "200m"
-        livenessProbe:
-          httpGet:
-            path: /
-            port: 3000
-          initialDelaySeconds: 30
-          periodSeconds: 10

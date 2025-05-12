@@ -1,7 +1,0 @@
-# overlays/dev/namespace.yaml
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: simple-node-react-dev
-  labels:
-    environment: dev

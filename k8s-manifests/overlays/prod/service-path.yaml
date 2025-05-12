@@ -3,10 +3,9 @@ kind: Service
 metadata:
   name: simple-node-react
 spec:
-  type: NodePort
   ports:
-  - port: 3000
+  - port: 80
     targetPort: 3000
-    nodePort: 30001
+    type: ClusterIP
   selector:
     app: simple-node-react

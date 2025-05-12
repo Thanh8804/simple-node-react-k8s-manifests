@@ -1,8 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: simple-node-react-config
-data:
-  NODE_ENV: "production"
-  API_URL: "https://api.example.com"
-  CACHE_ENABLED: "true"

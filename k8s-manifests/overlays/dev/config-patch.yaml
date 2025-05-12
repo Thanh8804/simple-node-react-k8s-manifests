@@ -1,9 +1,0 @@
-# overlays/dev/config-patch.yaml
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: simple-node-react-config
-data:
-  NODE_ENV: "development"
-  API_URL: "https://api-dev.example.com"
-  LOG_LEVEL: "debug"
