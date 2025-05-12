@@ -3,6 +3,9 @@ kind: Kustomization
 resources:
   - ../../base
 
-patchesStrategicMerge:
-  - service-patch.yaml
 nameSuffix: -development
+patches:
+  - path: Service-patch.yaml
+    target:
+      kind: Service
+      name: simple-node-react
