@@ -5,7 +5,7 @@ resources:
 
 nameSuffix: -development
 patches:
-  - path: service-patch.yaml
+  - path: service-path.yaml
     target:
       kind: Service
       name: simple-node-react
