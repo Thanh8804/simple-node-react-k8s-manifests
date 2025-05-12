@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: simple-node-react
-  namespace: production
 spec:
   replicas: 2
   selector:
