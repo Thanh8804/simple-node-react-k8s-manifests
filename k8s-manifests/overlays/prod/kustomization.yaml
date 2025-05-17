@@ -11,5 +11,5 @@ patches:
       name: simple-node-react
 images:
   - name: thanh8804/react-app
-    newTag: "76"
+    newTag: "84"
 # This file is intentionally left blank.
